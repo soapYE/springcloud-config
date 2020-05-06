@@ -2,9 +2,6 @@ spring:
   application:
     name: regist_center
 
-server:
-  port: 7001
-
 eureka:
   server:
     enable-self-preservation: false
