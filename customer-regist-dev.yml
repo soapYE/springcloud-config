@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: regist_center
+
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka1:7001/eureka/, http://eureka3:7003/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: localhost  
